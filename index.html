@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Win A Trip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+
+  </head>
+  <body>
+    <body>
+    <div class="container">
+      <h1 id="title">Win A Trip</h1>
+      <p id="description">This information form will help us give a way a trip to your perfered destination.</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="email" id="email-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="name" id="name-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Pic a number from 10 to 100</label>
+          <br>
+          <input type="number" id="number" min="10" max="100" placeholder="min 10 max 100">
+        </div>
+        <label for="country" id="country-name">Select Your Perfered Country</label>
+        <br>
+        <select id="dropdown" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+            <br>
+            <br>
+        <p>Select The Season of Your Trip</p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="season" id="season1" autocomplete="off" value="Winter 2018"> Winter 2018
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="season" id="season2" autocomplete="off" value="Fall 2018"> Fall 2018
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="season" id="season3" autocomplete="off" value="Spring 2018"> Spring 2018
+          </label>
+        </div>
+        <br>
+        <p>Travel Group Size</p>
+        <div name="group-size"class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="group-size" id="group1" autocomplete="off" value="1 Person"> 1 Person
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="group-size" id="group2" autocomplete="off" value="2 -4 People"> 2 - 4 People
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="group-size" id="group3" autocomplete="off" value="5 or More People"> 5 or More People
+          </label>
+        </div>
+          <br>
+          <br>
+        <h6>Click Button If You're Traveling With Your Pet/s?</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="pets1">
+            <br>
+          <label class="form-check-label" for="Pets1" value="Yes Pets"> Yes I Have Pets</label>
+        </div>
+          <br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="pets2">
+            <br>
+          <label class="form-check-label" for="Pets2" value="No Pets">No Pets Here</label>
+        </div>
+          <br>
+          <br>
+        <div id="comments"class="col">
+          <h6>Comments</h6>
+          <textarea class="form-control" placeholder="Comments?"></textarea>
+        </div>
+          <br>
+          <br>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+  </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
+  </body>
+</html>
